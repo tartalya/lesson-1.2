@@ -1,11 +1,5 @@
 <?php
 
-
-echo "govno code inside<br>";
-
-
-
-
-include 'inc.php';
+// preparing git repo for second lesson
 
 ?>

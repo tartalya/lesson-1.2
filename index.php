@@ -4,6 +4,7 @@
 // Применен POST заместо GET.
 // простая форма ввода чила с проверкой на numeric
 
+error_reporting(E_ALL & ~E_NOTICE); // нотисы нафиг
 
 
 

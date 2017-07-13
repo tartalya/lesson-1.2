@@ -63,7 +63,7 @@ else if ($_POST['user_number'] && !is_numeric($_POST['user_number'])) {
     echo "Вы будете перенаправлены на страницу ввода через 5 секунд";
     unset($_POST['user_number']);
     ?>
-    <meta http-equiv="refresh" content="5;URL=<?=$PHP_SELF?>" />
+    <meta http-equiv="refresh" content="5;URL=<?=$_SERVER['PHP_SELF']?>" />
     <?php
     
 }
@@ -73,7 +73,7 @@ else {
    
     // Здесь выводим HTML код формы для ввода числа
     ?>
-    			<form action="<?=$PHP_SELF?>" method="post"> 
+    			<form action="<?=$_SERVER['PHP_SELF']?>" method="post"> 
 				<input type="text" name="user_number" placeholder="Число">
 				<input type="submit">
 			</form>
